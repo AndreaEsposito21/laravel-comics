@@ -13,3 +13,58 @@ img {
   max-width: 100%;
 }
 
+header .high-row {
+  padding: 5px;
+  background-color: #0282f9;
+  display: flex;
+  text-align: right;
+}
+
+header .high-row .text {
+  margin: auto;
+  width: 80%;
+  color: white;
+}
+
+header .high-row .text span {
+  margin-left: 20px;
+}
+
+header .container {
+  text-align: center;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+header .container .menu {
+  list-style-type: none;
+}
+
+header .container .menu li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header .container .menu li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+header .container .menu li a.active {
+  color: #0282f9;
+  border-bottom: 5px solid;
+  padding-bottom: 60px;
+}
+
+header .banner {
+  background-image: url("/../img/jumbotron.jpg");
+  min-height: 400px;
+}
+

@@ -13,6 +13,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 header .high-row {
   padding: 5px;
   background-color: #0282f9;
@@ -52,9 +57,7 @@ header .container .menu li {
 
 header .container .menu li a {
   text-transform: uppercase;
-  text-decoration: none;
   color: black;
-  cursor: pointer;
 }
 
 header .container .menu li a.active {
@@ -66,5 +69,63 @@ header .container .menu li a.active {
 header .banner {
   background-image: url("/../img/jumbotron.jpg");
   min-height: 400px;
+}
+
+.wrapper {
+  background-color: #1c1c1c;
+}
+
+.wrapper .products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+
+.wrapper .products .product {
+  width: calc(100% / 6);
+  padding-top: 30px;
+}
+
+.wrapper .products .product h3 {
+  width: 192px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.wrapper .btn-container {
+  text-align: center;
+  padding: 25px;
+}
+
+.wrapper .btn-container a {
+  padding: 10px 40px;
+  background-color: #0282f9;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-navbar {
+  background-color: #0282f9;
+}
+
+.main-navbar .buy-comics {
+  display: flex;
+  justify-content: center;
+}
+
+.main-navbar .buy-comics .menu li {
+  display: inline-block;
+}
+
+.main-navbar .buy-comics .menu li img {
+  vertical-align: middle;
+}
+
+.main-navbar .buy-comics .menu li a {
+  text-transform: uppercase;
+  color: white;
 }
 

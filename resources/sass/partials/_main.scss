@@ -1,0 +1,59 @@
+.wrapper {
+    background-color: $color_secondary;
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 35px;
+
+        .product {
+            width: calc(100% / 6);
+            padding-top: 30px;
+
+            h3 {
+                width: 192px;
+                color: white;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .btn-container {
+        text-align: center;
+        padding: 25px;
+
+        a {
+            padding: 10px 40px;
+            background-color: $color_primary;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.main-navbar {
+    background-color: $color_primary;
+
+    .buy-comics {
+        display: flex;
+        justify-content: center;
+
+        .menu {
+
+            li {
+                display: inline-block;
+
+                img {
+                    vertical-align: middle;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+        }
+    }
+}

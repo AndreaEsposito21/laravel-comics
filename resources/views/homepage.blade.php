@@ -8,7 +8,9 @@
             <div class="products">
                 @foreach ($comics_array as $comics)
                     <div class="product">
-                        <img src=" {{ $comics['thumb']}} " alt="{{ $comics['title']}}">
+                        <a href="#">
+                            <img src=" {{ $comics['thumb']}} " alt="{{ $comics['title']}}">
+                        </a>
 
                         <h3>
                             {{ $comics['series']}}

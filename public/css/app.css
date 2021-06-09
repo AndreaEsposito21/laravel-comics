@@ -18,6 +18,10 @@ a {
   cursor: pointer;
 }
 
+.menu {
+  list-style-type: none;
+}
+
 header .high-row {
   padding: 5px;
   background-color: #0282f9;
@@ -97,7 +101,7 @@ header .banner {
 
 .wrapper .btn-container {
   text-align: center;
-  padding: 25px;
+  padding: 35px;
 }
 
 .wrapper .btn-container a {
@@ -112,8 +116,7 @@ header .banner {
 }
 
 .main-navbar .buy-comics {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .main-navbar .buy-comics .menu li {
@@ -122,10 +125,68 @@ header .banner {
 
 .main-navbar .buy-comics .menu li img {
   vertical-align: middle;
+  width: 40%;
+  padding: 20px;
 }
 
 .main-navbar .buy-comics .menu li a {
   text-transform: uppercase;
   color: white;
+}
+
+footer .wrapper-top {
+  background-image: url("/../img/footer-bg.jpg");
+  background-size: cover;
+}
+
+footer .wrapper-top .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .wrapper-top .inner .menu-container {
+  padding: 20px 0;
+}
+
+footer .wrapper-top .inner .menu-container .menu {
+  color: white;
+}
+
+footer .wrapper-top .inner .menu-container .menu h3 {
+  text-transform: uppercase;
+}
+
+footer .wrapper-bot {
+  background-color: #303030;
+  padding: 25px 0;
+}
+
+footer .wrapper-bot .footer-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .wrapper-bot .footer-navbar .signup {
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 20px;
+  border: 2px solid #0282f9;
+}
+
+footer .wrapper-bot .footer-navbar span {
+  display: flex;
+  align-items: center;
+}
+
+footer .wrapper-bot .footer-navbar span h3 {
+  text-transform: uppercase;
+  color: #0282f9;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer .wrapper-bot .footer-navbar span li {
+  display: inline-block;
+  margin-left: 10px;
 }
 

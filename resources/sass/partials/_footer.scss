@@ -1,0 +1,56 @@
+footer {
+    .wrapper-top {
+        background-image: url('/../img/footer-bg.jpg');
+        background-size: cover;
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+
+            .menu-container {
+                padding: 20px 0;
+                .menu {
+                    color: white;
+
+                    h3 {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    .wrapper-bot {
+        background-color: #303030;
+        padding: 25px 0;
+
+        .footer-navbar {
+            display: flex;
+            justify-content: space-between;
+
+            .signup {
+                text-transform: uppercase;
+                color: white;
+                padding: 20px 20px;
+                border: 2px solid $color_primary;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+
+                h3 {
+                    text-transform: uppercase;
+                    color: $color_primary;
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

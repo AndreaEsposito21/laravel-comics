@@ -22,7 +22,7 @@
 
     .btn-container {
         text-align: center;
-        padding: 25px;
+        padding: 35px;
 
         a {
             padding: 10px 40px;
@@ -37,8 +37,7 @@
     background-color: $color_primary;
 
     .buy-comics {
-        display: flex;
-        justify-content: center;
+        text-align: center;
 
         .menu {
 
@@ -47,6 +46,8 @@
 
                 img {
                     vertical-align: middle;
+                    width: 40%;
+                    padding: 20px;
                 }
 
                 a {

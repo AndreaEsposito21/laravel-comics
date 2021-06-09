@@ -8,7 +8,9 @@
             <div class="products">
                 @foreach ($comics_array as $comics)
                     <div class="product">
-                        <a href="#">
+                        <a href="{{ route('comic', [
+                            'id' => $comics['id']
+                        ]) }}">
                             <img src=" {{ $comics['thumb']}} " alt="{{ $comics['title']}}">
                         </a>
 
@@ -20,8 +22,14 @@
             </div>
 
             <div class="btn-container">
-                <a>
+                <a href="#">
                     Load More
+                </a>
+            </div>
+
+            <div class="btn-container pos-ab">
+                <a href="#">
+                    Current Series
                 </a>
             </div>
         </div>

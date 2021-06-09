@@ -5,7 +5,7 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -79,6 +79,10 @@ header .banner {
   background-color: #1c1c1c;
 }
 
+.wrapper .container {
+  position: relative;
+}
+
 .wrapper .products {
   display: flex;
   flex-wrap: wrap;
@@ -86,8 +90,9 @@ header .banner {
 }
 
 .wrapper .products .product {
-  width: calc(100% / 6);
+  width: calc(100% / 7);
   padding-top: 30px;
+  margin: 0px 15px;
 }
 
 .wrapper .products .product h3 {
@@ -109,6 +114,14 @@ header .banner {
   background-color: #0282f9;
   color: white;
   text-transform: uppercase;
+}
+
+.wrapper .btn-container.pos-ab {
+  position: absolute;
+  bottom: 96%;
+  left: 0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .main-navbar {
@@ -134,6 +147,87 @@ header .banner {
   color: white;
 }
 
+.wrapper-page .container {
+  position: relative;
+}
+
+.wrapper-page .blue-row {
+  height: 60px;
+  background-color: #0282f9;
+}
+
+.wrapper-page .description {
+  display: flex;
+  padding: 20px;
+}
+
+.wrapper-page .description .description-inner {
+  display: inline-block;
+  flex: 1;
+  margin-right: 10%;
+}
+
+.wrapper-page .description .description-inner h2 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  color: #003f5e;
+}
+
+.wrapper-page .description .description-inner .price {
+  display: flex;
+  justify-content: space-between;
+  background-color: #55ba59;
+  padding: 15px 45px;
+  margin: 20px 0;
+}
+
+.wrapper-page .description .description-inner .price h3 {
+  font-size: 14px;
+  color: #bafd93;
+}
+
+.wrapper-page .description .description-inner .price h3 span {
+  color: white;
+}
+
+.wrapper-page .description .description-inner .price .check {
+  color: white;
+}
+
+.wrapper-page .description .description-inner p {
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.wrapper-page .pos-ab {
+  position: absolute;
+  bottom: 105%;
+  left: 0;
+}
+
+.wrapper-page .pos-ab img {
+  border: 1px solid white;
+}
+
+.wrapper-page .details {
+  background-color: #f6f6f6;
+  border-top: 1px solid #d8d8d8;
+}
+
+.wrapper-page .details .flex {
+  display: flex;
+  padding: 20px 0;
+}
+
+.wrapper-page .details .flex .inner-flex {
+  flex: 1;
+  color: #003f5e;
+}
+
+.wrapper-page .details .flex .inner-flex .guys {
+  display: inline-block;
+}
+
 footer .wrapper-top {
   background-image: url("/../img/footer-bg.jpg");
   background-size: cover;
@@ -154,6 +248,15 @@ footer .wrapper-top .inner .menu-container .menu {
 
 footer .wrapper-top .inner .menu-container .menu h3 {
   text-transform: uppercase;
+}
+
+footer .wrapper-top .inner .logo-footer {
+  overflow: hidden;
+}
+
+footer .wrapper-top .inner .logo-footer img {
+  margin-top: -7%;
+  margin-bottom: -7%;
 }
 
 footer .wrapper-bot {

@@ -23,3 +23,24 @@ Route::get('/', function () {
     
     return view('homepage', $data);
 })->name('home');
+
+
+Route::get('/comic/{id}', function ($id) {
+    $comics_array = config('comics');
+
+    $details = [];
+    foreach($comics_array as $comic) {
+        if($comic['id'] == $id)
+        $details = $comic;
+    }
+
+    if(empty($details)) {
+        abort('404');
+    }
+
+    $data = [
+        'details' => $details
+    ];
+
+    return view('comic', $data);
+})->name('comic');
